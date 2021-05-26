@@ -172,3 +172,13 @@
   .spin {
     animation: hh 0.1s;
   }
+
+  @media screen and (max-width: 980px){
+    #grid .cartelIn{
+        margin-bottom: 3vh;
+        flex-basis: 100%;
+    }
+    #boxColor{
+        flex-basis: 100%;
+    }
+}
