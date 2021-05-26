@@ -1,9 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body{
+  }
+  body {
     background: #eaeaea;
     color: #fff;
     font-size: 18px;
@@ -12,22 +11,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-a {
+  }
+  a {
     color: #34495e;
-}
-
-#wrapper{
+  }
+  #wrapper {
     margin: 40px auto 0;
     width: 266px;
     position: relative;
-}
-
-#txt {
+  }
+  #txt {
     color: #eaeaea;
-}
-
-#wheel{
+  }
+  #wheel {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -36,9 +32,8 @@ a {
     border: 8px solid #fff;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px, rgba(0, 0, 0, 0.05) 0px 3px 0px;
     transform: rotate(0deg);
-}
-
-#wheel:before {
+  }
+  #wheel:before {
     content: '';
     position: absolute;
     border: 4px solid rgba(0, 0, 0, 0.1);
@@ -46,15 +41,13 @@ a {
     height: 242px;
     border-radius: 50%;
     z-index: 1000;
-}
-
-#inner-wheel {
+  }
+  #inner-wheel {
     width: 100%;
     height: 100%;
-    transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
-}
-
-#wheel .sec {
+    transition: all 6s cubic-bezier(0, .99, .44, .99);
+  }
+  #wheel .sec {
     position: absolute;
     width: 0;
     height: 0;
@@ -65,49 +58,43 @@ a {
     left: 50px;
     top: -4px;
     opacity: 1;
-}
-
-#wheel .sec:nth-child(1){
+  }
+  #wheel .sec:nth-child(1) {
     transform: rotate(60deg);
     border-color: #16a085 transparent;
-}
-#wheel .sec:nth-child(2){
+  }
+  #wheel .sec:nth-child(2) {
     transform: rotate(120deg);
     border-color: #2980b9 transparent;
-}
-#wheel .sec:nth-child(3){
+  }
+  #wheel .sec:nth-child(3) {
     transform: rotate(180deg);
     border-color: #34495e transparent;
-}
-#wheel .sec:nth-child(4){
+  }
+  #wheel .sec:nth-child(4) {
     transform: rotate(240deg);
     border-color: #f39c12 transparent;
-}
-
-#wheel .sec:nth-child(5){
+  }
+  #wheel .sec:nth-child(5) {
     transform: rotate(300deg);
     border-color: #d35400 transparent;
-}
-
-#wheel .sec:nth-child(6){
+  }
+  #wheel .sec:nth-child(6) {
     transform: rotate(360deg);
     border-color: #c0392b transparent;
-}
-
-/*icons*/
-#wheel .sec .fa{
+  }
+  #wheel .sec .fa {
     margin-top: -100px;
     color: rgba(0, 0, 0, 0.2);
     position: relative;
-    z-index: 100000;
+    z-index: 1000000;
     display: block;
     text-align: center;
     font-size: 36px;
     margin-left: -15px;
     text-shadow: rgba(255, 255, 255, 0.1) 0px -1px 0px, rgba(0, 0, 0, 0.2) 0px 1px 0px;
-}
-
-#spin {
+  }
+  #spin {
     width: 68px;
     height: 68px;
     position: absolute;
@@ -121,34 +108,31 @@ a {
     cursor: pointer;
     font-family: "Exo 2", sans-serif;
     user-select: none;
-}
-
-#spin:after {
+  }
+  #spin:after {
     content: 'SPIN';
     text-align: center;
     line-height: 68px;
     color: #ccc;
-    
+    text-shadow: 0 2px 0 #fff, 0 -2px 0 rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 100000;
     width: 68px;
     height: 68px;
     display: block;
-}
-
-#spin:before {
+  }
+  #spin:before {
     content: '';
     position: absolute;
     width: 0;
     height: 0;
-    border-style: solid;
+    border-style:  solid;
     border-width: 0 20px 28px 20px;
     border-color: transparent transparent #fff transparent;
     top: -12px;
     left: 14px;
-}
-
-#inner-spin {
+  }
+  #inner-spin {
     width: 54px;
     height: 54px;
     position: absolute;
@@ -156,27 +140,35 @@ a {
     left: 50%;
     margin: -27px 0 0 -27px;
     border-radius: 50%;
-    z-index: 999 ;
+    z-index: 999;
     box-shadow: rgba(255, 255, 255, 1) 0px -2px 0px inset, rgba(255, 255, 255, 1) 0px 2px 0px inset, rgba(0, 0, 0, 0.4) 0px 0px 5px;
-    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(234, 234, 234, 1)100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = "#ffffff", endColorstr="#eaeaea", gradienType=1);
-}
-#spin:active #inner-spin {
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0% , rgba(234, 234, 234, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr = '#ffffff', endColorstr='#eaeaea', GradientType=1);
+  }
+  #spin:active #inner-spin {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px inset;
-}
-#spin:active:after {
+  }
+  #spin:active:after {
     font-size: 15px;
-}
-
-@keyframes hh {
+  }
+  #shine {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.99) 1%, rgba(255, 255, 255, 0.91) 9%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr = '#ffffff', endColorstr='#00ffffff', GradientType=1);
+    opacity: 0.1;
+  }
+  @keyframes hh {
     0%, 100% {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     50% {
-        transform: rotate(7deg);
+      transform: rotate(7deg);
     }
-}
-
-.spin{
-    animation: hh 0.1s
-}
+  }
+  .spin {
+    animation: hh 0.1s;
+  }
