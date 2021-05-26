@@ -5,7 +5,7 @@
   body {
     background: #eaeaea;
     color: #fff;
-    font-size: 36px;
+    font-size: 54px;
     font-family: "Exo 2", sans-serif;
     height: 100vh;
     display: flex;
@@ -16,30 +16,30 @@
     color: #34495e;
   }
   #wrapper {
-    margin: 80px auto 0;
-    width: 532px;
+    margin: 60px auto 0;
+    width: 399px;
     position: relative;
   }
   #txt {
     color: #eaeaea;
   }
   #wheel {
-    width: 1000px;
-    height: 1000px;
+    width: 750px;
+    height: 750px;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
     border: 8px solid #fff;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px, rgba(0, 0, 0, 0.05) 0px 3px 0px;
     transform: rotate(0deg);
-    left: -200px;
+    left: -150px;
   }
   #wheel:before {
     content: '';
     position: absolute;
     border: 4px solid rgba(0, 0, 0, 0.1);
-    width: 990px;
-    height: 990px;
+    width: 738px;
+    height: 738px;
     border-radius: 50%;
     z-index: 1000;
   }
@@ -53,11 +53,11 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 520px 300px 0;
+    border-width: 390px 225px 0;
     border-color: #19c transparent;
-    transform-origin: 300px 516px;
-    left: 200px;
-    top: -8px;
+    transform-origin: 225px 387px;
+    left: 150px;
+    top: -4px;
     opacity: 1;
   }
   #wheel .sec:nth-child(1) {
@@ -85,23 +85,23 @@
     border-color: #c0392b transparent;
   }
   #wheel .sec .fa {
-    margin-top: -200px;
+    margin-top: -300px;
     color: rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1000000;
     display: block;
     text-align: center;
-    font-size: 72px;
-    margin-left: -30px;
+    font-size: 108px;
+    margin-left: -45px;
     text-shadow: rgba(255, 255, 255, 0.1) 0px -1px 0px, rgba(0, 0, 0, 0.2) 0px 1px 0px;
   }
   #spin {
-    width: 136px;
-    height: 136px;
+    width: 204px;
+    height: 204px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -68px 0 0 -68px;
+    margin: -102px 0 0 -102px;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 0px;
     z-index: 1000;
@@ -113,13 +113,13 @@
   #spin:after {
     content: 'SPIN';
     text-align: center;
-    line-height: 136px;
+    line-height: 204px;
     color: #ccc;
     text-shadow: 0 2px 0 #fff, 0 -2px 0 rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 100000;
-    width: 136x;
-    height: 136px;
+    width: 204x;
+    height: 204px;
     display: block;
   }
   #spin:before {
@@ -128,18 +128,18 @@
     width: 0;
     height: 0;
     border-style:  solid;
-    border-width: 0 20px 28px 20px;
+    border-width: 0 30px 42px 30px;
     border-color: transparent transparent #fff transparent;
-    top: -24px;
-    left: 48px;
+    top: -36px;
+    left: 72px;
   }
   #inner-spin {
-    width: 108px;
-    height: 108px;
+    width: 162px;
+    height: 162px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -54px 0 0 -54px;
+    margin: -81px 0 0 -81px;
     border-radius: 50%;
     z-index: 999;
     box-shadow: rgba(255, 255, 255, 1) 0px -2px 0px inset, rgba(255, 255, 255, 1) 0px 2px 0px inset, rgba(0, 0, 0, 0.4) 0px 0px 5px;
